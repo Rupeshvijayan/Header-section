@@ -1,0 +1,180 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	width:90vw;
+	margin:auto;
+}
+
+a{
+	text-decoration:none;
+}
+
+ul{
+	list-style-type:none;
+}
+
+header{
+	position:fixed;
+	width:100%;
+	z-index:10;
+	background-color:#000000;
+}
+	
+/* .head-row{ */
+	/* display:flex; */
+	/* align-items:center; */
+	
+	/* position:relative; */
+	
+	/* padding:15px 0; */
+/* } */
+
+.logo{
+	width:5%;
+	color:#fff;
+	font-weight:bold;
+}
+
+.logo span{
+	color:#ffc451;
+}	
+
+/* .nav-bar{ */
+	/* width:50%; */
+/* } */
+
+/* .navbar-btn{ */
+	/* width:10%; */
+	/* border:2px solid #ffc451; */
+	/* color:#fff; */
+	/* padding:8px 10px; */
+	/* border-radius:5px; */
+/* } */
+
+.navbar-btn:hover{
+	background-color:#ffc451;
+	color:#000000;
+}	
+
+.nav-bar nav ul{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}	
+
+.navbar-links{
+	color:#fff;
+}
+
+.navbar-links:hover{
+	color:#ffc451;
+}
+
+.dropdown ul{
+	display:flex;
+	flex-direction:column;
+	align-content:space-between;
+}
+
+.dropdown-menu ul{
+	display:block;
+}
+
+.dropdown-menu ul li{
+	padding:10px;
+	width:200px;
+}
+
+.dropdown-menu{
+	position:relative;
+}
+
+.dropdown a, .deep-dropdown a{
+	color:#000000;
+}
+
+.deep-dropdown ul :hover{
+	background-color:#ffc451;
+}
+
+.dropdown ul :hover{
+	background-color:#ffc451;
+}	
+	
+.dropdown-menu i{
+	color:#fff;
+}	
+
+.deep-dropdown-menu i{
+	color:#000000;
+}	
+
+.dropdown{
+	position:absolute;
+	top:250%;
+	
+	transition:all 0.3s ease-in-out;
+	background-color:#fff;
+	visibility:hidden;
+}	
+
+.dropdown-menu:hover .dropdown{
+	visibility:visible;
+	
+	top:150%;
+}	
+
+/*deep-drop-down*/
+.deep-dropdown-menu{
+	position:relative;
+}
+
+.deep-dropdown{
+	position:absolute;
+	top:0;
+	left:70%;
+	
+	transition:all 0.3s ease-in-out;
+	background-color:#fff;
+	visibility:hidden;
+}	
+
+.deep-dropdown-menu:hover .deep-dropdown{
+	visibility:visible;
+	
+	top:0;
+	left:100%;
+}	
+
+.mobile-nav-bar nav ul{
+	display:flex;
+	flex-direction:column;
+	align-content:space-between;
+}
+
+.mobile-nav-bar a{
+	text-decoration:none;
+	color:#000000;
+}
+
+.mobile-nav-bar li{
+	list-style-type:none;
+	padding:30px 0;
+	
+}
+.mobile-nav-bar{
+	position:absolute;
+	height:85vh;
+	width:90vw;
+	top:120%;
+}
+
+.mobile-nav-bar i{
+	color:#000000;
+}	
+
